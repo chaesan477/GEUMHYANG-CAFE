@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>GEUMHYANG CAFE</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Montserrat&family=Nanum+Gothic+Coding&family=Noto+Sans&family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+  
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap');
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Nanum Myeongjo', serif;
+      height: auto;
+    }
+
+    .header-background {
+      width: 100%;
+      height: 965px;
+      background-image: url('금향.JPG'); /* 이미지 경로 교체 */
+      background-size: cover;
+      background-position: center;
+      filter: brightness(0.7);
+    }
+
+    nav {
+      width: 100%;
+      height: 60px;
+      background-color: transparent;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 40px;
+    }
+
+    .logo {
+      flex-shrink: 0;
+    }
+
+    .logo img {
+      height: 40px;
+      object-fit: contain;
+    }
+
+    .menu-container {
+      flex-grow: 1;
+      display: flex;
+      justify-content: center;
+    }
+
+    ul.menu {
+      display: flex;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      gap: 100px;
+      font-weight: 400;
+      font-style: normal;
+    }
+
+    ul.menu li a {
+      text-decoration: none;
+      color: white;
+      font-size: 35px;
+      font-weight: 400;
+      padding: 10px 15px;
+      display: block;
+      transition: background-color 0.3s ease;
+    }
+
+    ul.menu li a:hover {
+      background-color: rgba(255, 255, 255, 0.2);
+      border-radius: 5px;
+    }
+
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif, ;
+    background-color: #f4f4f4;
+}
+
+.slider-container {
+    position: relative;
+    max-width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.slider-container {
+  width: 1220px; /* 슬라이드 이미지랑 딱 맞게 */
+  height: 730px;
+  margin: 50px auto; /* 가운데 정렬 */
+  overflow: hidden;
+  position: relative;
+}
+
+.slider {
+  display: flex;
+  height: 100%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  width: 1220px;
+  height: 629px;
+  flex-shrink: 0; /* 넘치지 않게 고정 */
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slide img {
+    width: 1220px;
+    height: 629px;
+    flex-shrink: 0;
+    box-sizing: border-box;
+}
+
+.nav {
+    position: absolute;
+    top: 42%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.prev, .next {
+    font-size: 2rem;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    cursor: pointer;
+}
+
+iframe{
+  width: 600px;
+  height: 430px;
+  margin-bottom: 50px;
+}
+
+.menu-container > .menu > li > a{
+ font-family: 'Noto Sans KR', sans-serif;
+}
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="header-background">
+    <nav>
+      <div class="logo">
+        <a href="index.html">
+          <img src="로고-removebg-preview.png" alt="로고사진" />
+        </a>
+      </div>
+
+      <div class="menu-container">
+        <ul class="menu">
+          <li><a href="./introduce.html">소개</a></li>
+          <li><a href="./menu.html">메뉴</a></li>
+          <li><a href="./store.html">매장</a></li>
+          <li><a href="https://map.naver.com/p/entry/place/1140180591?lng=127.5027902&lat=34.9801081&placePath=/feed?additionalHeight=76&from=map&fromPanelNum=1&locale=ko&svcName=map_pcv5&timestamp=202507282135&from=map&fromPanelNum=1&locale=ko&svcName=map_pcv5&timestamp=202507282135&additionalHeight=76&entry=plt&searchType=place&c=15.00,0,0,0,dh">소식</a></li>
+          <li><a href="https://map.naver.com/p/entry/place/1140180591?lng=127.5027902&lat=34.9801081&placePath=/review?additionalHeight=76&from=map&fromPanelNum=1&locale=ko&svcName=map_pcv5&timestamp=202507282135&from=map&fromPanelNum=1&locale=ko&svcName=map_pcv5&timestamp=202507282135&additionalHeight=76&entry=plt&searchType=place&c=15.00,0,0,0,dh">리뷰</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</header>
+<section style="background-color: #17392b; color: #f3e8e1; padding: 80px 0; font-size: 20px; font-family: 'Nanum Myeongjo', serif;">
+    <div style="display: flex; max-width: 1200px; margin: 0 auto; gap: 60px; align-items: center; flex-wrap: wrap; justify-content: center; padding: 0 20px;">
+      
+      <!-- 왼쪽 이미지 -->
+      <div style="flex: 1; min-width: 300px;">
+        <img src="금향 내부.png" alt="금향 내부 사진" style="width: 100%; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.4);" />
+      </div>
+  
+      <!-- 오른쪽 글 -->
+      <div style="flex: 1; min-width: 300px; line-height: 1.8;">
+        <p>
+          일상의 여백 속, 커피 한 잔과 예술이 어우러지는 복합문화공간.<br /><br />
+          누구나 편히 머무를 수 있는 진숙한 공간에서 작품과 사람,<br />
+          그리고 시간이 자연스럽게 스며듭니다.<br /><br />
+          앞으로도 항상 청결하고 맛좋은 음료를 제공하기 위해<br />
+          노력하는 금향이 되겠습니다.<br /><br />
+          감사합니다.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <div class="slider-container">
+    <div class="slider">
+        <div class="slide">
+            <img src="슬라이드1.jpg" alt="Image 1">
+        </div>
+        <div class="slide">
+            <img src="슬라이드2.jpg" alt="Image 2">
+        </div>
+        <div class="slide">
+            <img src="슬라이드3.jpg" alt="Image 3">
+        </div>
+        <div class="slide">
+            <img src="슬라이드4.jpg" alt="Image 4">
+        </div>
+        <div class="slide">
+            <img src="슬라이드5.jpg" alt="Image 5">
+        </div>
+    </div>
+    <div class="nav">
+      <span class="prev">&#10094;</span>
+      <span class="next">&#10095;</span>
+  </div>
+</div>
+  
+<script>
+  const slider = document.querySelector('.slider');
+  const slides = document.querySelectorAll('.slide');
+  const totalSlides = slides.length;
+  let index = 0;
+
+  function showSlide(i) {
+    slider.style.transform = `translateX(-${i * 1220}px)`;
+  }
+
+  function nextSlide() {
+    index = (index + 1) % totalSlides;
+    showSlide(index);
+  }
+
+  // 이전 버튼
+  document.querySelector('.prev').addEventListener('click', () => {
+    index = (index - 1 + totalSlides) % totalSlides;
+    showSlide(index);
+  });
+
+  // 다음 버튼
+  document.querySelector('.next').addEventListener('click', () => {
+    nextSlide();
+  });
+
+  // 5초마다 자동으로 넘어감
+  let autoSlide = setInterval(nextSlide, 5000);
+
+  // 마우스 올리면 멈춤 / 내리면 다시 재생
+  const container = document.querySelector('.slider-container');
+  container.addEventListener('mouseenter', () => clearInterval(autoSlide));
+  container.addEventListener('mouseleave', () => {
+    autoSlide = setInterval(nextSlide, 5000);
+  });
+</script>
+
+<!-- 메뉴 섹션 -->
+<section style="background-color: #f9f4ef; padding: 60px 20px; font-family: 'Nanum Myeongjo', serif;">
+  <!-- 제목 -->
+  <h2 style="text-align: center; background-color: #17392b; color: white; line-height: 100px; font-size: 28px; height: 100px">MENU</h2>
+
+  <!-- 무한 슬라이드 메뉴 이미지 -->
+  <div class="menu-marquee-container">
+    <div class="menu-marquee">
+      <!-- 이미지 2배 반복하여 부드러운 무한 슬라이드 효과 -->
+      <img src="메뉴1.jpg" alt="메뉴1">
+      <img src="메뉴2.jpg" alt="메뉴2">
+      <img src="메뉴3.jpg" alt="메뉴3">
+      <img src="메뉴4.jpg" alt="메뉴4">
+      <img src="메뉴5.jpg" alt="메뉴5">
+      <img src="메뉴6.jpg" alt="메뉴6">
+      <img src="메뉴7.jpg" alt="메뉴7">
+      <img src="메뉴8.jpg" alt="메뉴8">
+      
+      <!-- 반복 -->
+      <img src="메뉴1.jpg" alt="메뉴1">
+      <img src="메뉴2.jpg" alt="메뉴2">
+      <img src="메뉴3.jpg" alt="메뉴3">
+      <img src="메뉴4.jpg" alt="메뉴4">
+      <img src="메뉴5.jpg" alt="메뉴5">
+      <img src="메뉴6.jpg" alt="메뉴6">
+      <img src="메뉴7.jpg" alt="메뉴7">
+      <img src="메뉴8.jpg" alt="메뉴8">
+    </div>
+  </div>
+
+  <style>
+    .menu-marquee-container {
+      width: 100%;
+      overflow: hidden;
+      background-color: #f9f4ef;
+      padding: 30px 0;
+    }
+
+    .menu-marquee {
+      display: flex;
+      width: max-content;
+      animation: scrollSlider 40s linear infinite;
+    }
+
+    .menu-marquee img {
+      width: 180px;
+      height: 180px;
+      object-fit: cover;
+      margin-right: 10px;
+      border-radius: 10px;
+    }
+
+    @keyframes scrollSlider {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-50%);
+      }
+    }
+  </style>
+</section>
+
+
+  <!-- 주소 + 지도 -->
+  <div style="display: flex; justify-content: center; align-items: center; flex-wrap: wrap; gap: 40px; max-width: 1100px; margin: 0 auto;">
+    <!-- 텍스트 -->
+    <div style="flex: 1; min-width: 300px; font-size: 18px; line-height: 1.8;">
+      <p>
+        전남 순천시 용당동 46-7<br>
+        순천 용당동 한양수자인 맞은편에서<br>
+        서면공단 방향으로, 숲속어린이집 앞<br>
+        작은 도로를 따라 내려오시면 금향 카페가 보입니다
+      </p>
+    </div>
+
+    <!-- 지도 -->
+    <div style="flex: 1; min-width: 300px;">
+       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6538.129322069359!2d127.49765284154928!3d34.98004505198625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x356e0f37565a8041%3A0xd479091be86e3fdf!2z6riI7Zal!5e0!3m2!1sko!2skr!4v1752485999526!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- 푸터 -->
+<footer style=" height: 427px; background-color: #17392b; color: #f3e8e1; padding: 30px 20px; text-align: center; font-size: 16px; font-family: 'Nanum Myeongjo', serif;">
+  <br> <br> <br>
+  <img src="로고-removebg-preview.png" alt="Image">
+  <p style=" color: #CDA977; line-height: 30px;">
+    전남 순천시 충숙길 64 본점[커피전문점] (전남 순천시 용당동 46-7)<br>
+    대표자: 박용수<br>
+    사업자 번호: 709-09-02452
+  </p>
+</footer>
+
+
+</body>
+</html>

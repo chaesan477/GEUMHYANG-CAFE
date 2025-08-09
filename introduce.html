@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GEUMHYANG CAFE</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Montserrat&family=Nanum+Gothic+Coding&family=Noto+Sans&family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Noto Sans KR', sans-serif;
+      background-color: #f4f4f4;
+      height: auto;
+    }
+
+    header {
+      position: relative;
+    }
+
+    .header-background {
+      width: 100%;
+      height: 965px;
+      background-image: url('금향 서브 소개.jpg');
+      background-size: cover;
+      background-position: center;
+    }
+
+    nav {
+      width: 100%;
+      height: 60px;
+      background-color: #17392b;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 40px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .logo img {
+      height: 40px;
+    }
+
+    .menu-container {
+      flex-grow: 1;
+      display: flex;
+      justify-content: center;
+    }
+
+    ul.menu {
+      display: flex;
+      list-style: none;
+      gap: 100px;
+    }
+
+    ul.menu li a {
+      text-decoration: none;
+      color: white;
+      font-size: 35px;
+      padding: 10px 15px;
+      display: block;
+    }
+
+    ul.menu li a:hover {
+      background-color: rgba(255, 255, 255, 0.2);
+      border-radius: 5px;
+    }
+
+    /* intro */
+    section.intro {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      background-image: url('금향 서브 소개2.png');
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+    }
+
+    section.intro::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 60%;
+      height: 100%;
+      background: linear-gradient(to left, white 50%, rgba(255,255,255,0) 100%);
+      z-index: 1;
+    }
+
+    section.intro .intro-text {
+      position: relative;
+      width: 50%;
+      margin-left: auto;
+      padding: 60px;
+      z-index: 2;
+    }
+
+    section.intro .intro-text p {
+      font-size: 18px;
+      line-height: 1.8;
+      color: #17392b;
+      font-weight: 400;
+    }
+
+    /* intro2 - 텍스트 중앙정렬 */
+    section.intro2 {
+      width: 100%;
+      height: 600px;
+      background-image: url('금향 서브 소개3.jpg');
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    section.intro2 .intro-text {
+      width: auto;
+      margin: 0;
+      padding: 0 20px;
+      text-align: center;
+      z-index: 2;
+    }
+
+    section.intro2 .intro-text p {
+      color: #CDA977;
+      font-size: 20px;
+      line-height: 1.4;
+    }
+
+    .icon-container{
+      background-color: #fffcf7;
+    }
+
+    .icon-container {
+  background-color: #fffcf7;
+  padding: 50px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.icon-grid {
+  display: flex;
+  justify-content: center;
+  gap: 180px;
+  max-width: 2000px;
+  width: 100%;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.icon-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 220px;
+}
+
+.icon-item img {
+  width: 200px;      /* 이미지 고정 사이즈 */
+  height: auto;
+  margin-bottom: 12px;  /* 이미지와 제목 사이 간격 */
+  transform: translateY(20px);
+}
+
+.icon-title {
+  color: #cda977;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 6px;
+  line-height: 1.3;
+}
+
+.icon-desc {
+  width: 350px;
+  font-size: 17px;
+  color: #17392b;
+  line-height: 1.6;
+}
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="header-background">
+      <nav>
+        <div class="logo">
+          <a href="index.html">
+            <img src="로고-removebg-preview.png" alt="로고사진" />
+          </a>
+        </div>
+  
+        <div class="menu-container">
+          <ul class="menu">
+            <li><a href="./introduce.html">소개</a></li>
+            <li><a href="./menu.html">메뉴</a></li>
+            <li><a href="./store.html">매장</a></li>
+            <li><a href="https://map.naver.com/p/entry/place/1140180591?...">소식</a></li>
+            <li><a href="https://map.naver.com/p/entry/place/1140180591?...">리뷰</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <section class="intro">
+    <div class="intro-text">
+      <p>
+        순천 용당동 서면 방면에 위치한 ‘금향카페’는 갤러리와 로스팅 전문 카페가 결합된 특별한 공간입니다.<br>
+        대형 작품 전시와 분기별 전시 교체로 방문할 때마다 새로운 감성을 느낄 수 있습니다.<br>
+        아이들과 함께 즐길 수 있는 드로잉, 영어 쿠킹 클래스, 비눗방울 놀이, 모래놀이 등
+        다양한 체험<br> 프로그램도 마련되어 가족 단위 방문객에게 인기입니다.<br>
+        청결한 환경과 맛있는 음료로 일상 속 여유와 특별한 경험을 제공합니다.<br>
+      </p>
+    </div>
+  </section>
+
+  <!-- 아이콘 영역 -->
+<div class="icon-container">
+  <div class="icon-grid">
+    <div class="icon-item">
+      <img src="소개 아이콘1.png" alt="편의시설">
+      <p class="icon-title">[편의시설]</p>
+      <p class="icon-desc">로스터리 / 단체 이용 / 포장 / Wi-Fi<br>남·녀 화장실 구분 / 유아의자 / 휠체어 가능</p>
+    </div>
+    <div class="icon-item">
+      <img src="소개 아이콘2.png" alt="좌석·공간">
+      <p class="icon-title">[좌석·공간]</p>
+      <p class="icon-desc">단체석 (최대 40명)<br>입식 좌석</p>
+    </div>
+    <div class="icon-item">
+      <img src="소개 아이콘3.png" alt="결제수단">
+      <p class="icon-title">[결제수단]</p>
+      <p class="icon-desc">지역화폐(카드형, 지류형)<br>신용·체크카드</p>
+    </div>
+    <div class="icon-item">
+      <img src="소개 아이콘4.png" alt="주차">
+      <p class="icon-title">[주차]</p>
+      <p class="icon-desc">무료 주차 가능 (지상·지하)</p>
+    </div>
+  </div>
+</div>
+
+  
+
+  <section class="intro2">
+    <div class="intro-text">
+      <p>
+        앞으로도 항상 청결하고 맛 좋은 음료를 제공하기 위해 노력하는 금향이 되겠습니다.
+      </p>
+    </div>
+  </section>
+
+  <footer style="height: 427px; background-color: #17392b; color: #f3e8e1; padding: 30px 20px; text-align: center; font-size: 16px; font-family: 'Nanum Myeongjo', serif;">
+    <br><br><br>
+    <img src="로고-removebg-preview.png" alt="Image">
+    <p style="color: #CDA977; line-height: 30px;">
+      전남 순천시 충숙길 64 본점[커피전문점] (전남 순천시 용당동 46-7)<br>
+      대표자: 박용수<br>
+      사업자 번호: 709-09-02452
+    </p>
+  </footer>
+  
+</body>
+</html>

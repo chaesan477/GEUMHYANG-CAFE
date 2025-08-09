@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GEUMHYANG CAFE</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Montserrat&family=Nanum+Gothic+Coding&family=Noto+Sans&family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Noto Sans KR', sans-serif;
+      background-color: #f4f4f4;
+    }
+
+    header {
+      position: relative;
+    }
+
+    .header-background {
+      width: 100%;
+      height: 965px;
+      background-image: url('금향 메뉴.jpg');
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-top: 20px;
+    }
+
+    .header-background section p {
+      color: white;
+      font-size: 30px;
+      padding: 10px 20px;
+      text-shadow: 3px 2px 5px black;
+      
+    }
+
+    header nav {
+      width: 100%;
+      height: 60px;
+      background-color: #17392b;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 40px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .logo {
+      min-width: 120px;
+    }
+
+    .logo img {
+      height: 40px;
+    }
+
+    .menu-container {
+      flex-grow: 1;
+      display: flex;
+      justify-content: center;
+      padding-right:87px ;
+    }
+
+    ul.menu {
+      display: flex;
+      list-style: none;
+      gap: 100px;
+    }
+
+    ul.menu li a {
+      text-decoration: none;
+      color: white;
+      font-size: 35px;
+      padding: 10px 15px;
+      display: block;
+    }
+
+    ul.menu li a:hover {
+      background-color: rgba(255, 255, 255, 0.2);
+      border-radius: 5px;
+    }
+
+    .category-menu {
+      display: flex;
+      justify-content: center;
+    }
+
+    .category-menu ul {
+      list-style: none;
+      display: flex;
+      margin-top: -230px;
+    }
+
+    .menu-section {
+  background-color: #f8f5f0;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.menu-title {
+  font-size: 40px;
+  color: #cda977;
+  font-weight: 900;
+  margin-bottom: 50px;
+  font-family: 'Black Han Sans', sans-serif;
+}
+
+.menu-grid {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.menu-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 170px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 30px;
+  text-decoration: none;
+  color: #cda977;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.menu-item:hover {
+  transform: scale(1.05);
+}
+
+.menu-item img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+
+.menu-item span {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.signature-section {
+  background-color: #f8f5f0;
+  padding: 60px 0;
+  text-align: center;
+}
+
+.signature-title {
+  font-size: 36px;
+  color: #cda977;
+  font-weight: 900;
+  font-family: 'Black Han Sans', sans-serif;
+  margin-bottom: 40px;
+}
+
+.signature-grid {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.signature-item {
+  background-color: white;
+  border-radius: 30px;
+  padding: 30px 25px;
+  width: 280px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.signature-item img {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  margin-bottom: 20px;
+}
+
+.signature-name {
+  font-size: 26px;
+  font-weight: bold;
+  color: #cda977;
+  font-family: 'Black Han Sans', sans-serif;
+  margin-bottom: 15px;
+}
+
+.signature-name span {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.signature-desc {
+  font-size: 16px;
+  color: #17392b;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.signature-price {
+  font-size: 14px;
+  color: #cda977;
+  font-family: 'Nanum Myeongjo', serif;
+}
+
+
+  </style>
+</head>
+<body>
+
+  <!-- 헤더 영역 -->
+  <header>
+    <nav>
+      <div class="logo">
+        <a href="index.html">
+          <img src="로고-removebg-preview.png" alt="로고사진" />
+        </a>
+      </div>
+
+      <div class="menu-container">
+        <ul class="menu">
+          <li><a href="./introduce.html">소개</a></li>
+          <li><a href="./menu.html">메뉴</a></li>
+          <li><a href="./store.html">매장</a></li>
+          <li><a href="https://map.naver.com/p/entry/place/1140180591?lng=127.5027902&lat=34.9801081&placePath=/feed?additionalHeight=76">소식</a></li>
+          <li><a href="https://map.naver.com/p/entry/place/1140180591?lng=127.5027902&lat=34.9801081&placePath=/review?additionalHeight=76">리뷰</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- 배경 및 문구 -->
+  <div class="header-background">
+    <section class="header-text-center">
+      <p>좋은 재료, 정직한 맛, 그리고 따뜻한 분위기. 금향 카페입니다</p>
+    </section>
+  </div>
+
+  <!-- 메뉴 섹션 -->
+<section class="menu-section">
+    <h2 class="menu-title">MENU</h2>
+    <div class="menu-grid">
+      <a href="food.html" class="menu-item">
+        <img src="음식.jpg" alt="Food">
+        <span>Food</span>
+      </a>
+      <a href="dessert.html" class="menu-item">
+        <img src="디저트.jpg" alt="Dessert">
+        <span>dessert</span>
+      </a>
+      <a href="coffee.html" class="menu-item">
+        <img src="커피.jpg" alt="Coffee">
+        <span>coffee</span>
+      </a>
+      <a href="beverage.html" class="menu-item">
+        <img src="음료.jpg" alt="Beverage">
+        <span>beverage</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- 시그니처 메뉴 섹션 -->
+<section class="signature-section">
+    <h2 class="signature-title">⭐ Signature Menu</h2>
+    <div class="signature-grid">
+      
+      <!-- 첫 번째 메뉴 -->
+      <div class="signature-item">
+        <img src="에스&솔트.jpg" alt="에th&salt">
+        <h3 class="signature-name">에<span>th&amp;salt</span></h3>
+        <p class="signature-desc">
+          달달한 휘핑크림과 에스프레소의 진한 맛<br>
+          그리고 소금의 짠 맛의 조화
+        </p>
+        <p class="signature-price">(₩ 5,000)</p>
+      </div>
+  
+      <!-- 두 번째 메뉴 -->
+      <div class="signature-item">
+        <img src="골든 에스.jpg" alt="Golden 에th">
+        <h3 class="signature-name">Golden <span>에th</span></h3>
+        <p class="signature-desc">
+          부드럽고 달콤한 거품 위에 살포시 올려진<br>
+          Gold + 에스프레소
+        </p>
+        <p class="signature-price">(₩ 7,000)</p>
+      </div>
+  
+    </div>
+  </section>
+  
+
+  <!-- 푸터 -->
+  <footer style="height: 427px; background-color: #17392b; color: #f3e8e1; padding: 30px 20px; text-align: center; font-size: 16px; font-family: 'Nanum Myeongjo', serif;">
+    <br><br><br>
+    <img src="로고-removebg-preview.png" alt="Image">
+    <p style="color: #CDA977; line-height: 30px;">
+      전남 순천시 충숙길 64 본점[커피전문점] (전남 순천시 용당동 46-7)<br>
+      대표자: 박용수<br>
+      사업자 번호: 709-09-02452
+    </p>
+  </footer>
+
+</body>
+</html>

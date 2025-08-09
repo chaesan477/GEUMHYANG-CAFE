@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GEUMHYANG CAFE</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Montserrat&family=Nanum+Gothic+Coding&family=Noto+Sans&family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Noto Sans KR', sans-serif;
+      background-color: #f4f4f4;
+    }
+
+    header {
+      position: relative;
+    }
+
+    .header-background > nav {
+      width: 100%;
+      height: 60px;
+      background-color: transparent;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 40px;
+      position: relative;
+      z-index: 2;
+      background-color: #17392b;
+    }
+
+    .logo img {
+      height: 40px;
+    }
+
+    .menu-container {
+      flex-grow: 1;
+      display: flex;
+      justify-content: center;
+    }
+
+    ul.menu {
+      display: flex;
+      list-style: none;
+      gap: 100px;
+    }
+
+    ul.menu li a {
+      text-decoration: none;
+      color: white;
+      font-size: 35px;
+      padding: 10px 15px;
+      display: block;
+    }
+
+    ul.menu li a:hover {
+      background-color: rgba(255, 255, 255, 0.2);
+      border-radius: 5px;
+      
+    }
+    .beverage {
+    color: #cc9966;
+    height: 300px; /* 원하는 높이로 조절 */
+    display: flex;
+    margin-top: 50px;
+    justify-content: center; /* 가로 가운데 정렬 (선택) */
+}
+    .category-menu{
+        display: flex;
+        justify-content: center;
+    }
+
+    .category-menu ul{
+        list-style: none;
+        display: flex;
+        margin-top: -230px;
+    }
+    hr{
+      width: 500px;
+      margin: -200px auto 40px auto; /* 위로 5px 당김 */
+    }
+
+    .active{
+      gap: 50px;
+    }
+
+    a{
+      text-decoration: none;
+      color: #17392b;
+      display: inline-block;
+    }
+
+    .category-menu > .active > li > a:hover{
+      color: #cc9966;
+    }
+
+    .menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  max-width: 900px;  /* 너비 제한 */
+  margin: 30px auto; /* 가운데 정렬 */
+}
+
+
+
+.menu-item {
+  width: 200px;
+  text-align: center;
+  border: 1px solid #ddd; /* 테두리 */
+  border-radius: 10px;
+  padding: 10px;
+  background: white;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.menu-item img {
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+.menu-item p {
+  margin-top: 8px;
+  font-size: 14px;
+  color: #333;
+}
+
+.pagination {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 20px;
+  color: #17392b;
+}
+
+.pagination button {
+  background: none;
+  border: none;
+  font-size: 20px;
+  margin: 0 10px;
+  cursor: pointer;
+  color: #17392b;
+}
+
+.pagination span {
+  font-weight: bold;
+}
+
+.page-link {
+  color: gray;
+  margin: 0 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.page-link.active {
+  color: #17392b; /* 초록색 */
+}
+
+.tab {
+  color: #17392b; /* 기본 초록 */
+  font-size: 18px;
+}
+
+.tab.active {
+  color: #cc9966; /* 강조 주황색 */
+  font-weight: bold;
+}
+
+  </style>
+</head>
+<body>
+
+  <!-- 헤더 영역 -->
+  <header>
+    <div class="header-background">
+      <nav>
+        <div class="logo">
+          <a href="index.html">
+            <img src="로고-removebg-preview.png" alt="로고사진" />
+          </a>
+        </div>
+  
+        <div class="menu-container">
+          <ul class="menu">
+            <li><a href="./introduce.html">소개</a></li>
+            <li><a href="./menu.html">메뉴</a></li>
+            <li><a href="./store.html">매장</a></li>
+            <li><a href="https://map.naver.com/p/entry/place/1140180591?lng=127.5027902&lat=34.9801081&placePath=/feed?additionalHeight=76&from=map&fromPanelNum=1&locale=ko&svcName=map_pcv5&timestamp=202507282135&from=map&fromPanelNum=1&locale=ko&svcName=map_pcv5&timestamp=202507282135&additionalHeight=76&entry=plt&searchType=place&c=15.00,0,0,0,dh">소식</a></li>
+            <li><a href="https://map.naver.com/p/entry/place/1140180591?lng=127.5027902&lat=34.9801081&placePath=/review?additionalHeight=76&from=map&fromPanelNum=1&locale=ko&svcName=map_pcv5&timestamp=202507282135&from=map&fromPanelNum=1&locale=ko&svcName=map_pcv5&timestamp=202507282135&additionalHeight=76&entry=plt&searchType=place&c=15.00,0,0,0,dh">리뷰</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+        <div class="beverage">
+            <h1><b>BEVERAGE</b></h1>
+        </div>
+        <div class="category-menu">
+            <ul class="active">
+              <li><a href="./tea&ade.html" class="tab active">TEA&ADE</a></li>
+              <li><a href="./latte.html" class="tab">LATTE</a></li>
+              <li><a href="./smoothie.html" class="tab">SMOOTHIE</a></li>
+              <li><a href="./juice.html" class="tab">JUICE</a></li>
+            </ul>
+          </div>
+          <hr>
+          
+          <div class="menu-grid">
+        <div class="menu-item">
+      <img src="수제 생강차.jpg" alt="수제 생강차" />
+      <p>수제 생강차</p>
+      </div>
+      <div class="menu-item">
+      <img src="수제 대추차.jpg" alt="수제 대추차" />
+      <p>수제 대추차</p>
+    </div>
+    <div class="menu-item">
+      <img src="수제 미숫가루.jpg" alt="수제 미숫가루" />
+      <p>수제 미숫가루</p>
+    </div>
+    <div class="menu-item">
+      <img src="설국차.jpg" alt="설국차" />
+      <p>설국차</p>
+    </div>
+    <div class="menu-item">
+      <img src="레몬차.jpg" alt="레몬차" />
+      <p>레몬차</p>
+    </div>
+    <div class="menu-item">
+      <img src="자몽차.jpg" alt="자몽차" />
+      <p>자몽차</p>
+    </div>
+    <div class="menu-item">
+      <img src="상황버섯차.jpg" alt="상황버섯차" />
+      <p>상황버섯차</p>
+    </div>
+    <div class="menu-item">
+      <img src="페퍼민트.jpg" alt="페퍼민트" />
+      <p>페퍼민트</p>
+    </div>
+    <div class="menu-item">
+      <img src="보이차.jpg" alt="보이차" />
+      <p>보이차</p>
+    </div>
+    <div class="menu-item">
+      <img src="율무차.jpg" alt="율무차" />
+      <p>율무차</p>
+    </div>
+    <div class="menu-item">
+      <img src="얼그레이 티.jpg" alt="얼그레이 티" />
+      <p>얼그레이 티</p>
+    </div>
+    <div class="menu-item">
+      <img src="캐모마일.jpg" alt="캐모마일" />
+      <p>캐모마일</p>
+    </div>
+</div>
+
+<div class="pagination">
+  <a href="./tea&ade.html" class="page-link active">&#60;</a>
+  <a href="./tea&ade.html" class="page-link active"><span>1</span></a>
+  <a href="./tea&ade2.html" class="page-link"><span>2</span></a>
+  <a href="./tea&ade2.html" class="page-link active">&#62;</a>
+</div>
+
+
+
+  <footer style=" height: 427px; background-color: #17392b; color: #f3e8e1; padding: 30px 20px; text-align: center; font-size: 16px; font-family: 'Nanum Myeongjo', serif;">
+    <br> <br> <br>
+    <img src="로고-removebg-preview.png" alt="Image">
+    <p style=" color: #CDA977; line-height: 30px;">
+      전남 순천시 충숙길 64 본점[커피전문점] (전남 순천시 용당동 46-7)<br>
+      대표자: 박용수<br>
+      사업자 번호: 709-09-02452
+    </p>
+  </footer>
+  
+</body>
+</html>
